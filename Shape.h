@@ -8,9 +8,11 @@
 using namespace std;
 
 class Shape{
+    protected:
+        double area = 0.0;
     public:
         virtual double getArea(){return 0.0;}
-        virtual string printShape(){ return "Shape";}
+        virtual string shapeName(){ return "Shape";}
         
 };
 

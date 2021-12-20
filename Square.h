@@ -9,13 +9,16 @@ using namespace std;
 class Square: public Shape {
     protected:
         double x;
-        double area;
     public:
         Square(double sideLength){this->x = sideLength;}
-        string printShape() override {return "Square";}
+        string shapeName() override {return "Square";}
         double getArea() override;
 };
 
+double Square::getArea(){
+    this->area = pow(x,2);
+    return this->area;
+}
 
 
 #endif

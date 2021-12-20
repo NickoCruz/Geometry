@@ -2,26 +2,16 @@
 #define __SHAPE_H__
 
 #include <iostream>
+#include <string>
+#include <cmath>
 
 using namespace std;
 
 class Shape{
-    protected:
-        double area = 0;
-        double x = 0;
-        double y = 0;
-
     public:
-        Shape();
-
-        Shape(double x, double y);
-
-        virtual void calculateArea(Shape* ) = 0;
-
-
+       virtual string printShape(){ return "Shape";}
+        
 };
-
-
 
 
 

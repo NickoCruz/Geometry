@@ -9,7 +9,8 @@ using namespace std;
 
 class Shape{
     public:
-       virtual string printShape(){ return "Shape";}
+        virtual double getArea(){return 0.0;}
+        virtual string printShape(){ return "Shape";}
         
 };
 
